@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap Project</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/8f1cdf3503.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
+    <!--hlavička s navigaciou-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-secondary" id="navbar">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand col-1 d-flex justify-content-center"
+            href="index.html"
+          >
+            <img
+              src="obrazky/logo.png"
+              class="img-fluid"
+              width="50px"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col-11" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto text-center col-9">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                ><h5>Domov</h5></a
+              >
+              <a class="nav-link" href="dokumentacia.html">Dokumentácia</a>
+              <a class="nav-link" href="test.html">Test</a>
+            </div>
+            <div class="navbar-icon text-center mt-3 col-3">
+              <i
+                class="fa-solid fa-sun fa-2xl"
+                id="sun"
+                onclick="switchmode()"
+              ></i>
+              <i
+                class="fa-solid fa-moon fa-2xl"
+                id="moon"
+                onclick="switchmode()"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--test-->
+    <section>
+      <div class="container p-4">
+        <form>
+          <div class="row">
+            <div class="col-xl-6 col-md-12">
+              <h4 for="meno">Meno:</h4>
+              <input
+                type="text"
+                class="form-control"
+                id="meno"
+                aria-describedby="name"
+              />
+            </div>
+            <div class="col-xl-6 col-md-12">
+              <h4 for="priezvisko">Priezvisko:</h4>
+              <input
+                type="text"
+                class="form-control"
+                id="priezvisko"
+                aria-describedby="priezvisko"
+              />
+            </div>
+          </div>
+          <div class="otazkajedna p-4">
+            <h4>1. Aké rôzne typy premenných sú uvedené na stránke?</h4>
+            <label>
+              <input
+                type="radio"
+                id="jedenjeden"
+                name="otazkajedna"
+                value="String, int, double, char, boolean"
+              />
+              String, int, double, char, boolean </label
+            ><br />
+            <label>
+              <input
+                type="radio"
+                id="jedendva"
+                name="otazkajedna"
+                value="String, int, float, char, boolean"
+              />
+              String, int, float, char, boolean </label
+            ><br />
+            <label>
+              <input
+                type="radio"
+                id="jedentri"
+                name="otazkajedna"
+                value="String, integer, float, char, boolean"
+              />
+              String, integer, float, char, boolean
+            </label>
+          </div>
+
+          <div class="otazkadva p-4">
+            <h4>
+              2. Čo sa stane, ak kliknete na tlačidlo s ikonou slnka alebo
+              mesiaca v navigačnom paneli?
+            </h4>
+            <label>
+              <input
+                type="radio"
+                id="dvajeden"
+                name="otazkadva"
+                value="Stránka sa obnoví"
+              />
+              Stránka sa obnoví </label
+            ><br />
+            <label>
+              <input
+                type="radio"
+                id="dvadva"
+                name="otazkadva"
+                value="Prepne sa medzi svetlým a tmavým režimom"
+              />
+              Prepne sa medzi svetlým a tmavým režimom </label
+            ><br />
+            <label>
+              <input
+                type="radio"
+                id="dvatri"
+                name="otazkadva"
+                value="Otvorí sa nové okno"
+              />
+              Otvorí sa nové okno
+            </label>
+          </div>
+
+          <div class="otazkatri p-4">
+            <h4>
+              3. Aký je príklad použitia operátora priradenia v Jave podľa
+              stránky?
+            </h4>
+            <label>
+              <input
+                type="radio"
+                id="trijeden"
+                name="otazkatri"
+                value="int sum = 100 + 50"
+              />
+              int sum = 100 + 50 </label
+            ><br />
+            <label>
+              <input
+                type="radio"
+                id="tridva"
+                name="otazkatri"
+                value="int x = y"
+              />
+              int x = y </label
+            ><br />
+            <label>
+              <input type="radio" id="tritri" name="otazkatri" value="x > y" />
+              x > y
+            </label>
+          </div>
+
+          <div class="otazkastyri p-4">
+            <h4>
+              4. Ktorý HTML tag obsahuje obrázok Eclipse IDE v časti
+              Dokumentácia?
+            </h4>
+            <label>
+              <input
+                type="radio"
+                id="styrijeden"
+                name="otazkastyri"
+                value="img"
+              />
+              img </label
+            ><br />
+            <label>
+              <input
+                type="radio"
+                id="styridva"
+                name="otazkastyri"
+                value="div"
+              />
+              div </label
+            ><br />
+            <label>
+              <input
+                type="radio"
+                id="styritri"
+                name="otazkastyri"
+                value="section"
+              />
+              section
+            </label>
+          </div>
+
+          <div class="otazkapat p-4">
+            <h4>
+              5. Ktorý framework bol použitý na vytvorenie tejto stránky podľa
+              informácií v pätičke?
+            </h4>
+            <label>
+              <input
+                type="radio"
+                id="patjeden"
+                name="otazkapat"
+                value="Tailwind CSS"
+              />
+              Tailwind CSS </label
+            ><br />
+            <label>
+              <input
+                type="radio"
+                id="patdva"
+                name="otazkapat"
+                value="Foundation"
+              />
+              Foundation </label
+            ><br />
+            <label>
+              <input
+                type="radio"
+                id="pattri"
+                name="otazkapat"
+                value="Bootstrap"
+              />
+              Bootstrap
+            </label>
+          </div>
+
+          <div class="container pb-4 pl-4">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="test()"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Vyhodnotiť
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Tvoj výsledok
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body" id="vysledok"></div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--premiestnenie na uvodnú stranku-->
+    <section>
+      <div class="paragraf">
+        <h1>Potrebuješ <span class="text-primary">Zopakovať</span></h1>
+        <p>Kliknutím na tlačidlo nižšie sa vratiš späť na uvodnu stranku</p>
+        <div>
+          <button class="btn btn-primary" type="submit">
+            <a href="index.html">Späť</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--vyjadrenie na stranku-->
+    <section>
+      <div class="paragraf">
+        <h1><span class="text-primary">Vyjadrenie</span></h1>
+        <form>
+          <div class="vstup" id="vstup">
+            <div class="email p-2">
+              <h4 for="email">Email:</h4>
+              <input
+                type="email"
+                class="form-control"
+                id="emailInput"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="komentar p-2">
+              <h4>Pridaj Komentar</h4>
+              <textarea
+                class="form-control"
+                id="komentarInput"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="hodnotenie p-2">
+              <h4>Ohodnoť našu stranku od 1(najmenej) do 5(najviac):</h4>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                name="hodnotenie"
+                id="hodnoteniaInput"
+              >
+                <option selected>Ohodnoť</option>
+                <option value="1">Jeden</option>
+                <option value="2">Dva</option>
+                <option value="3">Tri</option>
+                <option value="4">Štyri</option>
+                <option value="5">Päť</option>
+              </select>
+            </div>
+            <div class="p-4">
+              <button
+                class="btn btn-primary"
+                type="button"
+                onclick="vyjadrenie()"
+              >
+                Potvrdiť
+              </button>
+            </div>
+          </div>
+          <div class="vystup p-4" id="vystup" style="display: none">
+            <p id="vysemail"></p>
+            <p id="vyskomentar"></p>
+            <p id="vyshodnotenie"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--päta stranky-->
+    <footer class="bg-body-secondary" id="footer">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">INFO</h5>
+
+            <p>
+              Táto stránka bola vytvorená pomocou CSS Framework-u Bootstrap a s
+              menšou pomocou CSS. Inšpiroval som sa strankou w3schools odkial
+              som aj bral informacie. Ulohy som vybral tie ktoré sme robili v
+              škole a dlhší text bol vytvorený pomocou chat gpt
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Využite komponenty</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!">navigacia</a>
+              </li>
+              <li>
+                <a href="#!">popover tlačidlo</a>
+              </li>
+              <li>
+                <a href="#!">modal tlačidlo</a>
+              </li>
+              <li>
+                <a href="#!">grid system</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Info</h5>
+
+            <p>
+              Na tejto stranke pracoval Dominik Tatarko z odboru Technické
+              Lýceum zo školy SPST SNV z triedy 3.A
+            </p>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        Stranka bola naposledý updatnutá 29/5/2024
+      </div>
+      <div class="text-center p-3">Školský rok: 2023/24</div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+
+      let isNavbarOpen = eval(navbarToggler.getAttribute("aria-expanded"));
+      let navInterval;
+
+      navbarToggler.addEventListener("click", () => {
+        isNavbarOpen = !isNavbarOpen;
+        if (isNavbarOpen && navInterval) clearInterval(navInterval);
+        navbarToggler.setAttribute("aria-expanded", isNavbarOpen);
+        if (!isNavbarOpen)
+          navInterval = setInterval(
+            () => navbarCollapse.classList.remove("show"),
+            10
+          );
+      });
+
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

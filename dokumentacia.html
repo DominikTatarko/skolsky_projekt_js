@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap Project</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/8f1cdf3503.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
+    <!--Hlava v ktorej sa nachádza navigacia a nazov casti stranky-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-secondary" id="navbar">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand col-1 d-flex justify-content-center"
+            href="index.html"
+          >
+            <img
+              src="obrazky/logo.png"
+              class="img-fluid"
+              width="50px"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col-11" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto text-center col-9">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                ><h5>Domov</h5></a
+              >
+              <a class="nav-link" href="dokumentacia.html">Dokumentácia</a>
+              <a class="nav-link" href="test.html">Test</a>
+            </div>
+            <div class="navbar-icon text-center mt-3 col-3">
+              <i
+                class="fa-solid fa-sun fa-2xl"
+                id="sun"
+                onclick="switchmode()"
+              ></i>
+              <i
+                class="fa-solid fa-moon fa-2xl"
+                id="moon"
+                onclick="switchmode()"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div class="row dokumentacia"><h1>Dokumentácia</h1></div>
+      </section>
+    </header>
+    <!--V sekcii sa nachádza cela dockumentácia aj s scrollspy-->
+    <section>
+      <div class="row">
+        <div class="col-xl-2 col-sm-12">
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action still" href="#"
+              ><strong>Obsah Dokumentácie:</strong></a
+            >
+            <a
+              class="list-group-item list-group-item-action still"
+              href="#scrollspyHeading3"
+              >Eclipse</a
+            >
+            <a
+              class="list-group-item list-group-item-action still"
+              href="#scrollspyHeading4"
+              >Premenné a Datové Typy</a
+            >
+            <a
+              class="list-group-item list-group-item-action still"
+              href="#scrollspyHeading5"
+              >Operátory</a
+            >
+            <a
+              class="list-group-item list-group-item-action still"
+              href="#scrollspyHeading6"
+              >If-else</a
+            >
+            <a
+              class="list-group-item list-group-item-action still"
+              href="#scrollspyHeading7"
+              >For cyklus</a
+            >
+          </div>
+        </div>
+
+        <div class="col-xl-10 col-sm-12">
+          <section class="m-3" style="border-top: 1px solid black">
+            <div>
+              <div class="container-fluid" id="odstavecjeden">
+                <div class="row p-3">
+                  <div class="col">
+                    <h1 id="scrollspyHeading3">ECLIPSE</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="p-4 m-2 rounded" id="cards">
+                      <p>
+                        <i class="fa-solid fa-hand-point-right"></i> Eclipse je
+                        výkonné integrované vývojové prostredie (IDE), ktoré
+                        podporuje tvorbu a úpravu kódu v rôznych programovacích
+                        jazykoch. Jeho univerzálnosť umožňuje prácu s rôznymi
+                        technológiami, vrátane Javy, C++, Pythonu a ďalších.
+                        Vďaka rozšíriteľnosti a pluginom je prispôsobiteľné
+                        potrebám vývojárov. Eclipse ponúka integrovanú podporu
+                        pre verzovacie systémy, čo uľahčuje sledovanie zmien v
+                        kóde a spoluprácu v tíme. S nástrojmi na refaktoring a
+                        rýchlym vyhľadávaním zlepšuje kvalitu kódu.
+                        Prispôsobiteľné rozhranie umožňuje individuálne
+                        nastavenie pracovného prostredia. Jeho silné stránky sú
+                        viditeľné aj v podpore rôznych technológií, frameworkov
+                        a platforiem. Aktívna komunita vývojárov zabezpečuje
+                        pravidelné aktualizácie a pridávanie nových funkcií, čím
+                        Eclipse zostáva spoľahlivým a výkonným nástrojom pre
+                        rozmanité vývojové projekty.
+                      </p>
+                    </div>
+                    <div class="p-4 m-2 rounded" id="cards">
+                      <h3>
+                        <i class="fa-solid fa-hand-point-right"></i> Link na
+                        stiahnutie
+                        <a
+                          href="https://www.eclipse.org/downloads/packages/installer"
+                          >JE TU!!!</a
+                        >
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 text-center">
+                    <img src="obrazky/eclipse.png" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <button
+                  class="btn btn-primary"
+                  onclick="vybavenejeden()"
+                  type="submit"
+                >
+                  Keď si sa už naučil stlač tlačidlo
+                </button>
+              </div>
+              <p
+                id="vybaveneone"
+                onmouseover="zvyraznenie()"
+                style="display: none"
+                class="p-3 vybavene"
+              >
+                Tento odstavec si sa učil
+              </p>
+            </div>
+          </section>
+          <section class="m-3" style="border-top: 1px solid black">
+            <div class="container-fluid">
+              <div class="row p-3">
+                <div class="col">
+                  <h1 id="scrollspyHeading4">PREMENNÉ A DATOVÉ TYPY</h1>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="p-4 m-2 rounded" id="cards">
+                    <p>
+                      <i class="fa-solid fa-hand-point-right"></i> Premenné sú
+                      kontajnery na ukladanie údajových hodnôt.
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-hand-point-right"></i> V jazyku Java
+                      existujú rôzne typy premenných, napríklad:
+                    </p>
+                    <ul class="list-group list-group-flush rounded">
+                      <li class="list-group-item">
+                        String - ukladá text, napríklad „Ahoj“. Hodnoty reťazcov
+                        sú ohraničené dvojitými úvodzovkami.
+                      </li>
+                      <li class="list-group-item">
+                        int - ukladá celé čísla (celé čísla) bez desatinných
+                        miest, napríklad 123 alebo -123.
+                      </li>
+                      <li class="list-group-item">
+                        float - ukladá čísla s pohyblivou rádovou čiarkou s
+                        desatinnými miestami, napríklad 19,99 alebo -19,99.
+                      </li>
+                      <li class="list-group-item">
+                        char - ukladá jednotlivé znaky, ako napríklad 'a' alebo
+                        'B'. Hodnoty znakov sú ohraničené jednoduchými
+                        úvodzovkami.
+                      </li>
+                      <li class="list-group-item">
+                        boolean - ukladá hodnoty s dvoma stavmi: true alebo
+                        false.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                  <!-- You can add an image or any other relevant content here -->
+                </div>
+              </div>
+              <div class="row">
+                <h3 class="p-3">SYNTAX</h3>
+                <div class="col-10 ms-3 mb-3 p-3 rounded">
+                  <p>type variableName = value;</p>
+                </div>
+              </div>
+              <div class="row">
+                <h3 class="p-3">Príklad</h3>
+                <div class="col-10 ms-3 mb-3 p-3 rounded">
+                  <p>
+                    <i class="fa-solid fa-hand-point-right"></i> Vytvorte
+                    premennú s názvom name of type Stringa priraďte jej hodnotu
+                    „ John “:
+                  </p>
+                  <div class="col-10 ms-3 mb-3 p-3 rounded">
+                    <p>String name = "John";</p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-container="body"
+                      data-bs-toggle="popover"
+                      data-bs-placement="bottom"
+                      data-bs-content="John"
+                    >
+                      Výstup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn btn-primary"
+              onclick="vybavenedva()"
+              type="submit"
+            >
+              Keď si sa už naučil stlač tlačidlo
+            </button>
+            <p
+              id="vybavenetwo"
+              onmousedown="zvyraznenie()"
+              style="display: none"
+              class="p-3 vybavene"
+            >
+              Tento odstavec si sa učil
+            </p>
+          </section>
+          <section class="m-3" style="border-top: 1px solid black">
+            <div class="container-fluid">
+              <div class="row" style="padding: 48px 16px 48px 0px">
+                <div class="col">
+                  <h1 id="scrollspyHeading5">OPERÁTORY</h1>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-hand-point-right"></i> Operátory sa
+                  používajú na vykonávanie operácií s premennými a hodnotami.
+                </p>
+                <p>
+                  <i class="fa-solid fa-hand-point-right"></i> V nižšie uvedenom
+                  príklade používame + operátor na sčítanie dvoch hodnôt.
+                </p>
+              </div>
+              <div class="row">
+                <h3>Príklady</h3>
+                <div class="col-10 ms-3 mb-3 p-3 rounded">
+                  <p>int x = 100 + 50;</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10 ms-3 mb-3 p-3 rounded">
+                  <p>int sum1 = 100 + 50; // 150 (100 + 50)</p>
+                  <p>int sum2 = sum1 + 250; // 400 (150 + 250)</p>
+                  <p>int sum3 = sum2 + sum2; // 800 (400 + 400)</p>
+                </div>
+              </div>
+              <div class="row">
+                <p>Java rozdeľuje operátory do nasledujúcich skupín:</p>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Skupina</th>
+                        <th scope="col">Operátory</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Aritmetické</td>
+                        <td>+, -, *, /, %, ++, --</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Priraďovacie</td>
+                        <td>=, +=, -=, %=</td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Porovnávacie</td>
+                        <td>==, !=, >, <</td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Logické</td>
+                        <td>&&, ||, !</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn btn-primary"
+              type="submit"
+              onclick="vybavenetri()"
+            >
+              Keď si sa už naučil stlač tlačidlo
+            </button>
+            <p
+              id="vybavenethree"
+              onmouseover="zvyraznenie()"
+              style="display: none"
+              class="p-3 vybavene"
+            >
+              Tento odstavec si sa učil
+            </p>
+          </section>
+          <section class="m-3" style="border-top: 1px solid black">
+            <div class="container-fluid">
+              <div class="row" style="padding: 48px 16px 48px 0px">
+                <div class="col">
+                  <h1 id="scrollspyHeading6">IF-ELSE</h1>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-hand-point-right"></i> Už viete, že Java
+                  podporuje obvyklé logické podmienky z matematiky:
+                </p>
+                <div class="container">
+                  <ul class="list-group rounded">
+                    <li class="list-group-item">Menej ako: a < b</li>
+                    <li class="list-group-item">Menšie alebo rovné: a <= b</li>
+                    <li class="list-group-item">Väčšie ako: a > b</li>
+                    <li class="list-group-item">Väčšie alebo rovné: a >= b</li>
+                    <li class="list-group-item">Rovná sa a == b</li>
+                    <li class="list-group-item">Nerovná sa: a != b</li>
+                  </ul>
+                </div>
+                <p class="p-2">
+                  <i class="fa-solid fa-hand-point-right"></i> Tieto podmienky
+                  môžete použiť na vykonanie rôznych akcií pre rôzne
+                  rozhodnutia.
+                </p>
+                <p class="">
+                  <i class="fa-solid fa-hand-point-right"></i> Java má
+                  nasledujúce podmienené príkazy:
+                </p>
+                <div class="container">
+                  <ul class="list-group rounded">
+                    <li class="list-group-item">
+                      Používa sa if na určenie bloku kódu, ktorý sa má vykonať,
+                      ak je zadaná podmienka pravdivá
+                    </li>
+                    <li class="list-group-item">
+                      Použite else na určenie bloku kódu, ktorý sa má vykonať,
+                      ak je rovnaká podmienka nepravdivá
+                    </li>
+                    <li class="list-group-item">
+                      Použite else if na určenie novej podmienky na testovanie,
+                      ak je prvá podmienka nepravdivá
+                    </li>
+                    <li class="list-group-item">
+                      Používa sa switch na zadanie mnohých alternatívnych blokov
+                      kódu, ktoré sa majú vykonať
+                    </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <h3>Syntax</h3>
+                  <div class="col-10 ms-3 mb-3 p-3 rounded">
+                    <p>
+                      if (condition) {<br />// block of code to be executed if
+                      the condition is true<br />}
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <h3>Príklad</h3>
+                  <div class="col-10 ms-3 mb-3 p-3 rounded">
+                    <p>
+                      int x = 20;<br />int y = 18;<br />if (x > y) {<br />System.out.println("x
+                      is greater than y");<br />}
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-container="body"
+                      data-bs-toggle="popover"
+                      data-bs-placement="bottom"
+                      data-bs-content="x is greater than y"
+                    >
+                      Výstup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn btn-primary"
+              type="submit"
+              onclick="vybavenestyri()"
+            >
+              Keď si sa už naučil stlač tlačidlo
+            </button>
+            <p
+              id="vybavenefour"
+              onmouseover="zvyraznenie()"
+              style="display: none"
+              class="p-3 vybavene"
+            >
+              Tento odstavec si sa učil
+            </p>
+          </section>
+          <section class="m-3" style="border-top: 1px solid black">
+            <div class="container-fluid">
+              <div class="row" style="padding: 48px 16px 48px 0px">
+                <div class="col">
+                  <h1 id="scrollspyHeading7">FOR CYKLUS</h1>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-hand-point-right"></i>
+                  Keď presne viete, koľkokrát chcete prechádzať blokom kódu,
+                  použite slučku for:
+                </p>
+              </div>
+              <div class="row">
+                <h3>Syntax</h3>
+                <div class="col-10 ms-3 mb-3 p-3 rounded">
+                  <p>
+                    <i class="fa-solid fa-hand-point-right"></i>
+                    for (statement 1; statement 2; statement 3) { // code block
+                    to be executed }
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <h3>Príklad</h3>
+                <p>
+                  <i class="fa-solid fa-hand-point-right"></i>
+                  Tento príklad vytlačí iba párne hodnoty medzi 0 a 10:
+                </p>
+                <div class="col-10 ms-3 mb-3 p-3 rounded">
+                  <p>
+                    for (int i = 0; i <= 10; i = i + 2){<br />
+                    System.out.print(i+" ");<br />
+                    }
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-container="body"
+                    data-bs-toggle="popover"
+                    data-bs-placement="bottom"
+                    data-bs-content="0 2 4 6 8 10"
+                  >
+                    Výstup
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn btn-primary"
+              type="submit"
+              onclick="vybavenepat()"
+            >
+              Keď si sa už naučil stlač tlačidlo
+            </button>
+            <p
+              id="vybavenefive"
+              onmouseover="zvyraznenie()"
+              style="display: none"
+              class="p-3 vybavene"
+            >
+              Tento odstavec si sa učil
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!--Sekcia ktorá nás premiestni na test-->
+    <section>
+      <div class="paragraf">
+        <h1>Poď skusiť <span class="text-primary">Test</span></h1>
+        <p>Kliknutím na tlačidlo nižšie otvoríš test</p>
+        <div>
+          <button class="btn btn-primary" type="submit">
+            <a href="test.html">Test</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--päta stranky-->
+    <footer class="bg-body-secondary" id="footer">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">INFO</h5>
+
+            <p>
+              Táto stránka bola vytvorená pomocou CSS Framework-u Bootstrap a s
+              menšou pomocou CSS. Inšpiroval som sa strankou w3schools odkial
+              som aj bral informacie. Ulohy som vybral tie ktoré sme robili v
+              škole a dlhší text bol vytvorený pomocou chat gpt
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Využite komponenty</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!">navigacia</a>
+              </li>
+              <li>
+                <a href="#!">popover tlačidlo</a>
+              </li>
+              <li>
+                <a href="#!">modal tlačidlo</a>
+              </li>
+              <li>
+                <a href="#!">grid system</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Info</h5>
+
+            <p>
+              Na tejto stranke pracoval Dominik Tatarko z odboru Technické
+              Lýceum zo školy SPST SNV z triedy 3.A
+            </p>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        Stranka bola naposledý updatnutá 29/5/2024
+      </div>
+      <div class="text-center p-3">Školský rok: 2023/24</div>
+      <!-- Copyright -->
+    </footer>
+    <!--Javascript-->
+    <script src="js/bootstrap.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+
+      let isNavbarOpen = eval(navbarToggler.getAttribute("aria-expanded"));
+      let navInterval;
+
+      navbarToggler.addEventListener("click", () => {
+        isNavbarOpen = !isNavbarOpen;
+        if (isNavbarOpen && navInterval) clearInterval(navInterval);
+        navbarToggler.setAttribute("aria-expanded", isNavbarOpen);
+        if (!isNavbarOpen)
+          navInterval = setInterval(
+            () => navbarCollapse.classList.remove("show"),
+            10
+          );
+      });
+
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+/*Stylovanie navigacie*/
+#navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+  
+.nav-link {
+    margin: 0 15px;
+    font-size: 18px; 
+    
+}
+  
+.nav-link:hover, h5:hover {
+    color: #007bff;
+}
+  
+.navbar-icon i {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+  
+.navbar-icon i:hover {
+    color: #007bff;
+}
+  
+.navbar-brand img {
+    transition: transform 0.3s;
+}
+  
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+.navbar-icon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; 
+    padding-bottom: 20px;   
+}
+
+.navbar-icon i {
+    margin-top: 10px; 
+}
+/*stylovanie textu ktorý predstavuje stranku*/
+.introduction, .paragraf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+.introduction button{
+    margin: 5px;
+}
+.oddeleny-text{
+    display: flex;
+    justify-content: center;
+}
+/*Stylovanie kariet*/
+.card {
+    border: none;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    height: 100%;
+    margin: 10px;
+  }
+  
+  .card-title {
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .card-text {
+    color: #666;
+    font-size: 1rem;
+  }
+  .card_border, .list-group-item{
+    transition: transform 0.3s;
+  }
+  .card_border:hover{
+    
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  .list-group-item:hover{
+    transform: scale(1.03);
+  }
+/*stylovanie caruselu*/
+#carusel{
+    width: 80%;
+}
+/*stylovanie videa*/
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.video iframe {
+    max-width: 100%; 
+}
+/*pridanie padding k textu*/
+#text{
+    padding: 50px;
+}
+/*styly k textu v tlačidlach*/
+button a{
+    color: white;
+    text-decoration: none;
+}
+/*styly k dokumentacii*/
+.dokumentacia{
+    padding: 20px;
+    text-align: center;
+}
+/*stylovania prepinača pozadia stranky*/
+#moon{
+    display: none;
+}
+.darkmode{
+    background-color: #393E46;
+    color: white;
+}
+/*stylovanie scroll spy*/
+.list-group-item {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+    color: #212529;
+  }
+  
+  .still:hover {
+    background-color: #e9ecef;
+    transform: scale(1);
+  }
+  
+  .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+/*styly pri zmenšenej obrazovke*/
+@media (max-width: 992px) {
+    .navbar-collapse{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-icon i:hover {
+        color: #007bff; 
+    }
+  }
